@@ -1,4 +1,0 @@
-strl="The quick brown fox jumps over the lazy dog."
-print(strl.split(" "))
-strl="The-quick-brown-fox-jumps-over-the-lazy-dog."
-print(strl.split("-"))
