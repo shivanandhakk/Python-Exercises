@@ -13,5 +13,6 @@ class roman_solution:
                     num-=val[i]
                 else:
                     i+=1
-            return roman_num n=int(input("ENTER A NUMBER:"))
+            return roman_num 
+n=int(input("ENTER A NUMBER:"))
 print("roman numeral of given number is:",roman_solution.int_to_Roman(n))        
