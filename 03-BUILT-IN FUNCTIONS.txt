@@ -1,0 +1,41 @@
+print("List Built-in functions:\n 1.Length of List\n2.Append function\n3.Sort function\n4.Insert function\n5.Reverse function\n6.Pop function\nExit\n")
+lst=[]
+x=int(input("Enter the number of elements in List"))
+print("Enter",x,"Items")
+for i in range(x):
+    v=input()
+    lst.append(v)
+print("The items of the list are",lst)
+while(1):
+    n=int(input("Enter yout choice:"))
+    if(n==1):
+        print("Length of the list is:",len(lst))
+    elif(n==2):
+        print("Enter the element to append")
+        lst.append(input())
+        print("The items of the list are",lst)
+    elif(n==3):
+        print("Sorting the list")
+        lst.sort()
+        print("The items of the sorted are",lst)
+    elif(n==4):
+        print("Insert into list")
+        p=int(input("Enter the position to insert"))
+        a=input("Enter the item")
+        lst.insert(p,a)
+        print("The items of the list are",lst)
+    elif(n==5):
+        print("Reverse of list")
+        lst.reverse()
+        print("The items of the list are",lst)
+    elif(n==6):
+        print("Delete items from the list")
+        r=int(input("Enter the position to delete"))
+        lst.pop(r)
+        print("The items of the list are",lst)
+    elif(n==7):
+        print("Exited")
+        break
+    else:
+        print("Invalid choice")
+        
